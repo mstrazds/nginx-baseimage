@@ -4,7 +4,6 @@ nginx:
   container_name: nginx
   build: .
   dockerfile: Dockerfile
-  privileged: true
   ports:
     - "8080:80"
     - "443:443"
