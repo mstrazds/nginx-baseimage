@@ -1,0 +1,12 @@
+environments:
+  - name: acceptance
+    provider: ec2
+  - name: production
+    provider: ec2
+
+service:
+  name: http-endpoint
+  healthEndpoint: /
+  port: 8000
+  pathPatterns: 
+  - /*
